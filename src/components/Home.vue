@@ -1,5 +1,6 @@
 <template>
-  <carousel :perPageCustom="[[768, 1], [1024, 1]]" :autoplay="true" :unagile="true" :autoplayTimeout="3000" autoplayHoverPause="true" :loop="true" paginationActiveColor="#005caa">
+  <div>
+    <carousel :perPageCustom="[[768, 1], [1024, 1]]" :autoplay="true" :unagile="true" :autoplayTimeout="3000" autoplayHoverPause="true" :loop="true" paginationActiveColor="#005caa">
     <slide>
       <img src="../assets/movies/movie1.jpg"/>
     </slide>
@@ -16,6 +17,8 @@
       <img src="../assets/movies/movie1.jpg"/>
     </slide>
   </carousel>
+  <div id="blank"></div>
+</div>
 </template>
 
 <script>
@@ -32,5 +35,9 @@ export default {
 img {
   height: 300px;
   width: 100%;
+}
+
+#blank {
+  margin-bottom: 350px;
 }
 </style>

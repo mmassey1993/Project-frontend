@@ -1,5 +1,8 @@
 <template>
+    <v-layout justify-center>
+        <v-flex xs12 sm10 md8 lg6>
     <div  class="col-sm-6 col-md-12">
+        <div class="">
         <h1 class="heading col-sm-6 col-md-12">Location</h1>
     <div class="container-fluid col-sm-6 col-md-12">
         <p id="map">
@@ -8,17 +11,19 @@
         <div id="info"><p id="address">Address:<br>5th Floor Anchorage 1, Anchorage Quay, Salford Quays, Greater Manchester, M50 3YJ</p>
         <p id="access">Accessible by Car, Bus, and Tram (Anchorage Station)</p>
         </div>
+        <br><br><br><br>
         <div id="nearby">
             <h2 class="heading">Places To Visit Nearby</h2>
             <a href="http://www.lowryoutlet.co.uk/"><img id ="lowry" src="../assets/lowry.jpg"></a>
             <a href="https://itvstudios.com/"><img id = "itv" src ="../assets/itv-studios.jpg"></a>
             <a href="https://www.wagamama.com/restaurants/media-city"><img id="wagamama" src ="../assets/wagamama.jpg"></a>
         </div>
-        <div class="text-center col-md-6 col-md-offset-3 information">
-      <p id="Copyright">&copy; <a href="homepage.html">QA Cinema</a> &middot; All Rights Reserved &middot; </p>
+        
     </div>
 	</div>
 </div>
+        </v-flex>
+    </v-layout>
 </template>
 
 <script>
@@ -58,8 +63,8 @@ export default {
     color: white;
     font-size: 20px;
     position: relative;
-    width:300px;
-    left:850px;
+    width:400px;
+    left:790px;
     top:100px;
 }
 
@@ -70,7 +75,8 @@ export default {
   border-radius: 10px;
   text-align: center;
   position: relative;
-  top: 100px;
+  top: 00px;
+  margin-bottom:80px;
 }
 
 #itv {

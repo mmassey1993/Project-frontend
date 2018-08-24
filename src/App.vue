@@ -1,4 +1,5 @@
 <template>
+<div id="cont">
   <div id="app">
 
     <div id="topBanner">
@@ -32,15 +33,22 @@
       <!-- <p>You chose <b>{{ active }}</b></p> -->
     </div>
     <router-view/>
+    <component><Footer></Footer></component>
   </div>
+  
+</div>
+
+
 </template>
 
 <script>
 import router from './router'
 import icons from 'glyphicons'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
+  components: { Footer },
   data () {
     return {
       active: '',
@@ -58,10 +66,14 @@ export default {
 </script>
 
 <style>
+/* @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap'; */
+
   *{
     margin:0;
     padding:0;
   }
+
+
 
   #logo {
     height: 60px;
@@ -70,6 +82,11 @@ export default {
     margin-left: 20px;
     margin-top: 20px;
   }
+  #cont {
+    min-height: 100vh;
+    position: relative;
+  }
+
 
   #account {
 float: right;
@@ -96,15 +113,12 @@ float: right;
   text-decoration: underline;
   cursor: pointer;
 }
-
-#label {
-  font-size:26px;
-}
   body{
     font:15px/1.3 'Open Sans', sans-serif;
     color: #000000;
     text-align:center;
     background-color: black;
+    
   }
 
   a, a:visited {
@@ -131,8 +145,6 @@ float: right;
     margin-bottom: 0px;
     float: bottom;
     background-color: #005baa;
-    /* opacity: 0.5;
-    box-shadow:0 1px 1px #ccc; */
     border-radius:0px;
     width: 100%;
     -webkit-box-shadow: 0px -3px 8px 4px rgba(0,0,0,1);
@@ -169,7 +181,8 @@ float: right;
     background-color:#000;
   }
 
-  /* p{
+
+  p{
     font-size:22px;
     font-weight:bold;
     color:#7d9098;
@@ -183,7 +196,7 @@ float: right;
     border-radius:2px;
     text-transform:uppercase;
     font-size:18px;
-  } */
+  }
   #topBanner {
     width: 100%;
     height: 110px;

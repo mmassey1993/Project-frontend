@@ -24,7 +24,7 @@ Vue.use(icons)
 Vue.use(VueCarousel)
 Vue.use(BootstrapVue)
 Vue.use(Vuetify)
-
+Vue.component('Footer', require('@/components/Footer.vue'))
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({

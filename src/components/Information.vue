@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="row">
    <div>
     <div id="content" class="col-sm-6 col-md-12">
 	<div class="table information" align="center">
@@ -55,13 +55,8 @@
             </b-carousel-slide>
         </b-carousel>
 	</div>
+    <div></div>
     </div>
-    <div class="row">
-    <div class="text-center col-md-6 col-md-offset-3">
-      <p>&copy; <a href="homepage.html" >QA Cinema</a> &middot; All Rights Reserved &middot; </p>
-    </div>
-    <br>
-  </div>
 </div>
 </template>
 
@@ -98,6 +93,11 @@ export default {
 </script>
 
 <style scoped>
+#row {
+    width:100%;
+    height:1300px;
+}
+
 #table {
   left: 70px;
   top: 40px;
@@ -115,7 +115,6 @@ export default {
   top: 20px;
   margin-right: auto;
   position: relative;
-  bottom:300px;
   width: 500px;
   height: 440px;
   font-size: 22px;
@@ -123,7 +122,7 @@ export default {
 }
 
 #content {
-  /* position: relative; */
+  position: relative;
   left: 190px;
   top: 70px;
   width: 760px;
@@ -133,10 +132,11 @@ export default {
 }
 
 #content2 {
-  /* position: relative; */
-  left: 210px;
+  position: relative;
+  left: 300px;
   top: 90px;
   width: 760px;
+  /* margin:400px; */
   height: 500px;
   /* background-color: #00386b;
   border-radius: 10px; */
@@ -145,15 +145,16 @@ export default {
 #content3 {
   position: relative;
   left: 190px;
-  top: 120px;
+  top: 60px;
   width: 1540px;
-  height: 800px;
+  /* height: 500px; */
+  /* margin-bottom:50px; */
   /* background-color: #00386b;
   border-radius: 10px; */
 }
 
 .carousel {
-    position:relative;
+    /* position:relative; */
     left:180px;
     top:20px;
 }
@@ -164,7 +165,7 @@ export default {
   top: 50px;
   margin-left: auto;
   margin-right: auto;
-  bottom: 1000px;
+  /* bottom: 1000px; */
 }
 
 .seatsImage {
@@ -218,15 +219,6 @@ caption {
 
 .heading2 {
     top:0px;
-}
-
-.row {
-  width:600px;
-  position:absolute;
-  left:700px;
-  top:1550px;
-  font-size:12px;
-  color: white;
 }
 
 p {

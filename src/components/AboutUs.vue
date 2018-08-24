@@ -1,4 +1,6 @@
 <template>
+ <v-layout justify-center>
+    <v-flex xs12 sm10 md8 lg6>
 <div class="col-sm-6 col-md-12" >
     <div>
         <div>
@@ -55,17 +57,18 @@
         <p><br><br><br><a href="https://www.postgresql.org/">PostgreSQL</a> is a powerful database system that we connected to our project to allow us to store necessary information about those who use our website, such as accounts that have been created and orders that have been made.</p>
         <h4 class="heading heading2 col-sm-6 col-md-12" style="font-size:20px;">Contact Details</h4>
         <p style="text-align:center;"><br><br><br>Telephone: 01234 567890<br>Email: info@QACinemas.com</p>
-        <div class="row text-center col-md-6 col-md-offset-3">
-        <p>&copy; <a href="homepage.html" >QA Cinema</a> &middot; All Rights Reserved &middot; </p>
-    </div>
         </div>
+       
     </div>
+
 </div>
+  </v-flex>
+  </v-layout>
 </template>
 
 <script>
 export default {
-    name: "AboutUs"
+    name: 'AboutUs'
 }
 </script>
 
@@ -79,6 +82,22 @@ export default {
   background-color: #00386b;
   border-radius: 10px;
 }
+
+  #cont {
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .theFooter {
+     width: 100%;
+     position: absolute;
+     height: 100px;
+     padding-top: 30px;
+     bottom: 0;
+     color:white;
+     background-color:#005baa;
+     
+} 
 
 .heading {
     font-weight: lighter;

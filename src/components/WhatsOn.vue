@@ -178,6 +178,7 @@ border-bottom: black 1px solid;
     margin: 0;
     position: relative;
     width: 100%;
+    
   }
 
   .image {

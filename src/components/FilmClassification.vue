@@ -1,6 +1,7 @@
 <template>
-
-<div class="col-sm-6 col-md-12">
+ <v-layout justify-center>
+    <v-flex xs12 sm10 md8 lg6>
+<div id="cont" class="col-sm-6 col-md-12">
     <h1 class="heading col-sm-6 col-md-12">Film Classifications</h1>
   <div class="container-fluid">
     <table striped bordered hover border=3>
@@ -43,14 +44,10 @@
   <div id="textinfo">
   <p id ="info">For full details of the legal restrictions for these works please see the <a href="https://www.bbfc.co.uk/sites/default/files/attachments/BBFC%20Classification%20Guidelines%202014_5.pdf">BBFC Classification Guidelines document</a></p>
   </div>
-  <br><br><br>
-  <div class="row">
-    <div class="text-center col-md-6 col-md-offset-3">
-      <p>&copy; <a href="homepage.html" >QA Cinema</a> &middot; All Rights Reserved &middot; </p>
-    </div>
-    <br>
-  </div>
+  
 </div>
+  </v-flex>
+  </v-layout>
 
 </template>
 
@@ -61,6 +58,9 @@ export default {
 </script>
 
 <style scoped>
+#cont {
+  /* margin-bottom:20px; */
+}
 #content {
    position: relative;
   left: 25%;
@@ -74,7 +74,6 @@ export default {
 .heading {
     font-weight: lighter;
     color:white;
-    font-size:22px;
     text-align:center;
     position: relative;
     top:50px;
@@ -84,27 +83,21 @@ export default {
 
 table {
   width:700px;
+  font-size:20px;
   position: relative;
   left: 610px;
-  top: 60px;
+  top: 100px;
   background-color: white;
 }
 #textinfo {
   position: absolute;
   font-size:18px;
-  /* bottom:40px; */
-  left:550px;
-  bottom:-40px;
+  left:450px;
   text-align: center;
   color:white;
+  margin-top:110px;
 }
-.row {
-  width:600px;
-  position:absolute;
-  left:700px;
-  bottom:-70px;
-  color: white;
-}
+
 th  {
   width:20%;
   text-align: center;
@@ -113,7 +106,7 @@ th  {
 }
 td {
   text-align: center;
-  font-size:16px;
+  font-size:18px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 </style>
