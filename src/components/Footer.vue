@@ -27,11 +27,11 @@
 #footer {
   width: 100%;
      /* position: relative; */
-     height: 100px;
+     /* height: 100px;
      padding-top: 30px;
      bottom: 0;
      color:white;
      background-color:#005baa;
-     position: sticky;
+     position: sticky; */
 }
 </style>

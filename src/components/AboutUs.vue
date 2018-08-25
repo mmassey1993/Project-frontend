@@ -58,7 +58,7 @@
         <h4 class="heading heading2 col-sm-6 col-md-12" style="font-size:20px;">Contact Details</h4>
         <p style="text-align:center;"><br><br><br>Telephone: 01234 567890<br>Email: info@QACinemas.com</p>
         </div>
-       
+       <br>
     </div>
 
 </div>
@@ -139,7 +139,8 @@ p, li {
     text-align: left;
     width: 1200px;
     position: relative;
-    left: 400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 ul {

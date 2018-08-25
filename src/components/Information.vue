@@ -1,10 +1,10 @@
 <template>
 <div id="row">
-   <div>
+   <div id="test">
     <div id="content" class="col-sm-6 col-md-12">
 	<div class="table information" align="center">
         <h1 class="heading" align="center">Ticket Prices</h1>
-        <div id ="table">
+        <div id ="table1">
             <b-table striped bordered hover :fields="tickets.fields" :items="tickets.items"></b-table>
         </div>
     </div>
@@ -20,6 +20,7 @@
   <br>
   </div>
 </div>
+<br>
 <div id="content3" class="col-sm-6 col-md-12">
   <h1 class="heading" align="center">Screens</h1>
     <br><br>
@@ -55,7 +56,7 @@
             </b-carousel-slide>
         </b-carousel>
 	</div>
-    <div></div>
+    <br>
     </div>
 </div>
 </template>
@@ -93,15 +94,24 @@ export default {
 </script>
 
 <style scoped>
+#test{
+    position: relative;
+    /* margin-left:auto;
+    margin-right:auto; */
+    display: inline-block;
+}
+
 #row {
     width:100%;
     height:1300px;
+    position: relative;
 }
 
-#table {
+#table1 {
   left: 70px;
   top: 40px;
-  margin-right: auto;
+  margin-left:auto;
+    margin-right:auto;
   position: relative;
   bottom:300px;
   width: 600px;
@@ -123,54 +133,60 @@ export default {
 
 #content {
   position: relative;
-  left: 190px;
+  /* left: 190px; */
   top: 70px;
   width: 760px;
   height: 500px;
+  margin-left:auto;
+    margin-right:auto;
   /* background-color: #00386b; */
   /* border-radius: 10px; */
 }
 
 #content2 {
   position: relative;
-  left: 300px;
+  /* left: 300px; */
   top: 90px;
   width: 760px;
-  /* margin:400px; */
   height: 500px;
-  /* background-color: #00386b;
-  border-radius: 10px; */
+  margin-left:auto;
+    margin-right:auto;
+
 }
 
 #content3 {
   position: relative;
-  left: 190px;
+  /* left: 190px; */
   top: 60px;
-  width: 1540px;
-  /* height: 500px; */
-  /* margin-bottom:50px; */
-  /* background-color: #00386b;
-  border-radius: 10px; */
+  /* width: 1540px; */
+    display: inline;
 }
 
 .carousel {
-    /* position:relative; */
-    left:180px;
+    position:relative;
     top:20px;
+    display: inline-block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #carousel2 {
   height: 450px;
   width: 800px;
   top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  margin-left:auto;
+    margin-right:auto;
+    display: block;
   /* bottom: 1000px; */
 }
 
 .seatsImage {
     width:100%;
     height:100%;
+    /* display: inline-block; */
+    margin-left:auto;
+    margin-right:auto;
 }
 
 caption {

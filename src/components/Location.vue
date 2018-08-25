@@ -6,7 +6,7 @@
         <h1 class="heading col-sm-6 col-md-12">Location</h1>
     <div class="container-fluid col-sm-6 col-md-12">
         <p id="map">
-        <iframe width="800" height="600" frameborder="2" style="border:2" src="https://www.google.com/maps/embed/v1/place?q=Anchorage%201%2C%20Anchorage%20Quay%2C%20Salford%20Quays%2C%20Manchester%2C%20UK&key={{api key}}" allowfullscreen></iframe>
+        <iframe width="800" height="600" frameborder="2" style="border:2" src="https://www.google.com/maps/embed/v1/place?q=Anchorage%201%2C%20Anchorage%20Quay%2C%20Salford%20Quays%2C%20Manchester%2C%20UK&key=AIzaSyBy3Ccy2bmmFBE_UHoXa5t_IM9sjOCZY_E    " allowfullscreen></iframe>
         </p>
         <div id="info"><p id="address">Address:<br>5th Floor Anchorage 1, Anchorage Quay, Salford Quays, Greater Manchester, M50 3YJ</p>
         <p id="access">Accessible by Car, Bus, and Tram (Anchorage Station)</p>
@@ -57,6 +57,8 @@ export default {
 #map {
     position: relative;
     top:100px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #info {
@@ -64,8 +66,9 @@ export default {
     font-size: 20px;
     position: relative;
     width:400px;
-    left:790px;
     top:100px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #nearby {
@@ -77,6 +80,8 @@ export default {
   position: relative;
   top: 00px;
   margin-bottom:80px;
+  margin-left:auto;
+    margin-right:auto;
 }
 
 #itv {
@@ -86,6 +91,8 @@ export default {
   float: right;
   right: 400px;
   background-color: black;
+  margin-left:auto;
+    margin-right:auto;
 }
 
 #wagamama {
@@ -93,6 +100,8 @@ export default {
     background-color: white;
     top:60px;
     position:relative;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #lowry {
@@ -102,6 +111,8 @@ export default {
   top:60px;
   left: 400px;
   background-color: white;
+  margin-left:auto;
+    margin-right:auto;
 }
 
 #Copyright {

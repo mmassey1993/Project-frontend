@@ -4,7 +4,7 @@
 <div id="cont" class="col-sm-6 col-md-12">
     <h1 class="heading col-sm-6 col-md-12">Film Classifications</h1>
   <div class="container-fluid">
-    <table striped bordered hover border=3>
+    <table striped bordered hover border=3 >
       <tbody>
         <tr>
           <th scope="col">Classification</th>
@@ -60,6 +60,8 @@ export default {
 <style scoped>
 #cont {
   /* margin-bottom:20px; */
+  margin-left: auto;
+  margin-right: auto;
 }
 #content {
    position: relative;
@@ -83,16 +85,20 @@ export default {
 
 table {
   width:700px;
+  margin-left: auto;
+  margin-right: auto;
   font-size:20px;
   position: relative;
-  left: 610px;
+  /* left: 610px; */
   top: 100px;
   background-color: white;
 }
 #textinfo {
-  position: absolute;
+  position: relative;
   font-size:18px;
-  left:450px;
+  /* left:450px; */
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   color:white;
   margin-top:110px;
